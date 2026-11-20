@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhea Villanueva | Personal Blog</title>
+  <meta name="description" content="The personal blog of Rhea Villanueva: favorite memories, friendships, family moments and adventures.">
+  <meta name="theme-color" content="#800000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#memories">Skip to my memories</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">Rhea Villanueva</a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#about" data-nav="about">About Me</a></li>
+        <li><a href="#memories" data-nav="memories">My Memories</a></li>
+        <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" data-section>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-name">Rhea Villanueva</p>
+          <h1>Welcome to My Personal Blog</h1>
+          <p class="hero-sub">Every picture tells a story, and every moment becomes a memory worth keeping.</p>
+          <a class="btn" href="#memories">See my memories</a>
+        </div>
+
+        <figure class="arch photo" data-photo data-file="img/1.jpg">
+          <img src="img/20.jpg" alt="Featured photograph from Rhea's blog" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section about" id="about" data-section>
+      <div class="container about-grid">
+        <figure class="about-photo photo" data-photo data-file="img/2.jpg">
+          <img src="img/2.jpg" alt="A photograph of Rhea" decoding="async">
+        </figure>
+
+        <div class="about-copy">
+          <h2>About Me</h2>
+          <p>Hello! I'm Rhea Villanueva. Welcome to my personal blog, a little space where I share my favorite memories, meaningful experiences, adventures, friendships, and special moments in my life. Through these photographs, I want to preserve the beautiful memories that make every chapter of my journey meaningful.</p>
+          <p class="signature">Rhea Villanueva</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories" id="memories" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>My Memories</h2>
+          <p>Twenty photographs, twenty little pieces of my story.</p>
+        </div>
+
+        <div class="carousel" id="carousel" role="region" aria-roledescription="carousel"
+             aria-label="Photo memories" tabindex="0">
+          <div class="carousel-frame">
+            <div class="carousel-stage">
+              <div class="carousel-viewport" id="carouselViewport">
+                <div class="carousel-track" id="carouselTrack"></div>
+              </div>
+
+              <button class="car-btn prev" id="carPrev" type="button" aria-label="Previous photo">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="car-btn next" id="carNext" type="button" aria-label="Next photo">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+
+              <span class="counter" id="carCounter">1 / 20</span>
+            </div>
+          </div>
+
+          <p class="caption" id="carCaption" aria-live="polite"></p>
+
+          <div class="dots" id="carDots" aria-label="Choose a photo"></div>
+          <div class="thumbs" id="carThumbs" aria-label="Photo thumbnails"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Gallery</h2>
+          <p>Tap any photo to see it larger.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>My Journey</h2>
+          <p>The people and places that shape my story.</p>
+        </div>
+
+        <div class="journey-grid">
+          <article class="card">
+            <div class="card-photo photo" data-photo data-file="img/14.jpg">
+              <img src="img/14.jpg" alt="A family moment during a special celebration" decoding="async">
+            </div>
+            <div class="card-body">
+              <h3>Family Moments</h3>
+              <p>The people who feel like home, and the celebrations that bring us together.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo photo" data-photo data-file="img/9.jpg">
+              <img src="img/9.jpg" alt="Little moments with friends" decoding="async">
+            </div>
+            <div class="card-body">
+              <h3>Friendship</h3>
+              <p>Small, simple moments with friends that turn into the best stories.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo photo" data-photo data-file="img/7.jpg">
+              <img src="img/7.jpg" alt="School days with good friends" decoding="async">
+            </div>
+            <div class="card-body">
+              <h3>School Memories</h3>
+              <p>Classmates, teamwork, and school days that are even better when shared.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo photo" data-photo data-file="img/16.jpg">
+              <img src="img/16.jpg" alt="A trip with friends surrounded by nature" decoding="async">
+            </div>
+            <div class="card-body">
+              <h3>Outdoor Adventures</h3>
+              <p>Fresh air, beautiful views, and trips worth remembering.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo photo" data-photo data-file="img/11.jpg">
+              <img src="img/11.jpg" alt="A sweet celebration with friends" decoding="async">
+            </div>
+            <div class="card-body">
+              <h3>Special Celebrations</h3>
+              <p>Birthdays, new years, and every happy occasion worth celebrating.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact" data-section>
+    <div class="container footer-inner">
+    
+      <a class="to-top" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Close preview">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lb-btn lb-nav lb-prev" id="lbPrev" type="button" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="lb-btn lb-nav lb-next" id="lbNext" type="button" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <figure class="lb-figure">
+      <div class="lb-photo photo" id="lbPhoto" data-photo data-file="">
+        <img id="lbImg" src="" alt="">
+      </div>
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
